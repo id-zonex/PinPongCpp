@@ -1,0 +1,2 @@
+C:\Users\Адмін\source\repos\PinPongCpp\x64\Debug\PinPongCpp.exe
+C:\Users\Адмін\source\repos\PinPongCpp\x64\Debug\PinPongCpp.pdb
