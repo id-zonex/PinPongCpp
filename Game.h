@@ -11,7 +11,7 @@ class Game
 	void WriteMap();
 	void Clear();
 
-	int _hight = 15;
+	int _hight = 25;
 	int _weigth = 80;
 
 	std::vector<Ball> _actors;

@@ -21,6 +21,8 @@ public:
 	void ControlePlatform();
 	void WritePlatform();
 
+	void Clear();
+
 	Vector2 GetLocation();
 	int GetSize();
 };

@@ -24,9 +24,14 @@ void Platform::ControlePlatform()
 
 void Platform::WritePlatform()
 {
+    Clear();
+
     for (int y = 0; y <= _size; y++)
         Renderer::WriteOfPosition(Vector2{ _position.X, _position.Y + y }, '#');
+}
 
+void Platform::Clear()
+{
     if (_yDirection > 0)
         Renderer::WriteOfPosition(Vector2{ _position.X, _position.Y - _yDirection }, ' ');
     else if (_yDirection < 0)

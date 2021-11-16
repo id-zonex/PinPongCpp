@@ -15,8 +15,9 @@ void Game::BeginPlay()
     _actors.push_back(Ball(_weigth, _hight, _player));
 
     Clear();
-    WriteMap();
 
+    Render();
+    WriteMap();
 }
 
 void Game::Update()
@@ -41,11 +42,13 @@ void Game::Render()
 
 void Game::WriteMap()
 {
-    for (int x = 0; x <= _weigth + 1; x++)
+    int x, y;
+
+    for (x = 0; x <= _weigth + 1; x++)
     {
-        for (int y = 0; y <= _hight + 1; y++)
+        for (y = 0; y <= _hight + 1; y++)
         {
-            if ((x == 0 || x > _weigth) || (y == 0 || y > _hight)) {}
+            if ((x == 0 || x > _weigth) || (y == 0 || y > _hight))
                 Renderer::WriteOfPosition(x, y, '*');
         }
     }

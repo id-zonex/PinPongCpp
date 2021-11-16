@@ -1,11 +1,14 @@
 ﻿#include <Windows.h>
+#include <thread>
 #include "Game.h"
 
 int Tick = 25;
 
+Game* game;
+
 int main()
 {
-    Game* game = new Game();
+    game = new Game();
 
     game->BeginPlay();
 

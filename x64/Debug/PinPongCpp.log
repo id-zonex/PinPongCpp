@@ -1,15 +1,4 @@
-﻿  Ball.cpp
-  Game.cpp
-  Library.h
+﻿  Game.cpp
   PinPongCpp.cpp
-  Library.cpp
-C:\Users\Адмін\source\repos\PinPongCpp\Library.cpp(21,18): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
-C:\Users\Адмін\source\repos\PinPongCpp\Library.cpp(21,29): warning C4838: conversion from 'int' to 'SHORT' requires a narrowing conversion
-  Platform.cpp
-  Vector2.cpp
-  Generating Code...
-x64\Debug\Library.obj : warning LNK4042: object specified more than once; extras ignored
-Ball.obj : error LNK2019: unresolved external symbol "public: static void __cdecl Renderer::WriteOfPosition(struct Vector2,char)" (?WriteOfPosition@Renderer@@SAXUVector2@@D@Z) referenced in function "public: void __cdecl Ball::Clear(void)" (?Clear@Ball@@QEAAXXZ)
-Platform.obj : error LNK2001: unresolved external symbol "public: static void __cdecl Renderer::WriteOfPosition(struct Vector2,char)" (?WriteOfPosition@Renderer@@SAXUVector2@@D@Z)
-Game.obj : error LNK2019: unresolved external symbol "public: static void __cdecl Renderer::WriteOfPosition(int,int,char)" (?WriteOfPosition@Renderer@@SAXHHD@Z) referenced in function "private: void __cdecl Game::WriteMap(void)" (?WriteMap@Game@@AEAAXXZ)
-C:\Users\Адмін\source\repos\PinPongCpp\x64\Debug\PinPongCpp.exe : fatal error LNK1120: 2 unresolved externals
+  Создание кода...
+  PinPongCpp.vcxproj -> C:\Users\tester\source\repos\PinPongCpp\x64\Debug\PinPongCpp.exe

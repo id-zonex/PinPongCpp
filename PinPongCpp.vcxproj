@@ -141,7 +141,7 @@
   <ItemGroup>
     <ClCompile Include="Ball.cpp" />
     <ClCompile Include="Game.cpp" />
-    <ClCompile Include="Library.h" />
+    <ClInclude Include="Library.h" />
     <ClCompile Include="PinPongCpp.cpp" />
     <ClCompile Include="Library.cpp" />
     <ClCompile Include="Platform.cpp" />
