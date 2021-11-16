@@ -3,7 +3,6 @@
 
 #pragma once
 
-#include <iostream>
 #include "windows.h"
 #include "Vector2.h"
 
@@ -15,8 +14,6 @@ public:
 	static void WriteOfPosition(COORD position, char submol);
 
 	static void WriteOfPosition(int positionX, int positionY, char submol);
-
-	static void WriteOfPosition(int positionX, int positionY, std::string string);
 };
 
 #endif 

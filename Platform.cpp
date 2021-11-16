@@ -1,5 +1,7 @@
+#include "Vector2.h"
 #include "Library.h"
 #include "Platform.h"
+#include "windows.h"
 
 Platform::Platform(Vector2 position, int border, int size) : _position(position), _border(border), _size(size)
 {}
@@ -22,7 +24,7 @@ void Platform::ControlePlatform()
 
 void Platform::WritePlatform()
 {
-    for (SHORT y = 0; y <= _size; y++)
+    for (int y = 0; y <= _size; y++)
         Renderer::WriteOfPosition(Vector2{ _position.X, _position.Y + y }, '#');
 
     if (_yDirection > 0)

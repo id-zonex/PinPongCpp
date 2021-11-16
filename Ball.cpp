@@ -1,6 +1,8 @@
 #include "Ball.h"
 #include "Library.h"
-#include "string"
+#include "Vector2.h"
+#include "windows.h"
+
 
 Ball::Ball(int mapSizeX, int mapSizeY, Platform* playerPlatform, char submol)
  : _mapSizeX(mapSizeX),
@@ -44,7 +46,7 @@ Vector2 Ball::CheckCollision()
 
     Vector2 playerLocation = _playerPlatform->GetLocation();
 
-    if (_position.X + 3>= playerLocation.X  && (_position.Y + 1 >= playerLocation.Y && _position.Y - 1 <= playerLocation.Y + _playerPlatform->GetSize()))
+    if (_position.X + 3 >= playerLocation.X  && (_position.Y + 1 >= playerLocation.Y && _position.Y - 1 <= playerLocation.Y + _playerPlatform->GetSize()))
     {
         Score++;
         newDirection.X *= -1;
@@ -65,7 +67,7 @@ void Ball::SetPosition(const Vector2& newPosition)
 
 void Ball::Clear()
 {
-    Renderer::WriteOfPosition(_oldPosition, ' ');
+   Renderer::WriteOfPosition(_oldPosition, ' ');
 }
 
 Vector2 Ball::GetPosition()

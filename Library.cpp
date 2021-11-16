@@ -1,4 +1,6 @@
+#include <iostream>
 #include "Library.h"
+#include "Vector2.h"
 
 
 void Renderer::WriteOfPosition(Vector2 position, char submol)
@@ -20,10 +22,3 @@ void Renderer::WriteOfPosition(int positionX, int positionY, char submol)
 	WriteOfPosition(position, submol);
 }
 
-void Renderer::WriteOfPosition(int positionX, int positionY, std::string string)
-{
-	COORD position{ positionX, positionY };
-	SetCursorPos(positionX, positionY);
-
-	std::cout << string;
-}
